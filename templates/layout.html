@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flasticket::{% block title %}{% endblock %}</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap-datetimepicker/3.0.0/css/bootstrap-datetimepicker.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+    <script src="http://cdn.bootcss.com/bootbox.js/4.2.0/bootbox.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/lang/ko.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap-datetimepicker/3.0.0/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="http://eonasdan.github.io/bootstrap-datetimepicker/scripts/locales/bootstrap-datetimepicker.ru.js"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    {% block head %}{% endblock %}
+  </head>
+
+
+  <body width="100%">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">'왜 왜 질문맨'</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">예약</a></li>
+            <li><a href="#">확인</a></li>
+            <li><a href="http://www.왜왜질문맨.kr/" target="_blank">공연소개</a></li>
+            <li><a href="https://github.com/liks79/flasticket">소스코드</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+
+	<!-- content-->
+	<div id="content" class="span12" style="padding-top: 60px; padding-bottom: 30px; margin-left:5px; margin-right:5px">
+
+    		{% block content %}{% endblock %}
+
+	</div>
+	<!-- end of content-->
+
+
+
+
+	<!-- footer begin -->
+    {% block footer %}
+
+        <div id="footer">
+          <div class="container">
+            <p class="text-muted">Powered by <a href="http://flask.pocoo.org/" target="_blank">Flask</a> Python Microframework</p>
+          </div>
+        </div>
+
+    {% endblock %}
+	<!-- footer end -->
+
+
+  </body>
+  {% block js %}
+  {% endblock %}
+</html>
