@@ -26,7 +26,7 @@ def index():
 
 
 @app.route('/list')
-def reserved():
+def list():
     users = User.query.all()
     return render_template('list.html', users=users)
 
