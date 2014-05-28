@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf59b509-46ad-4188-8787-0586fb0826da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/User.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flasticket.py" afterPath="$PROJECT_DIR$/flasticket.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flasticket.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +49,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="130" selection-start="3902" selection-end="3902" vertical-scroll-proportion="0.26153848" vertical-offset="1210" max-vertical-offset="1936">
+            <state line="82" column="130" selection-start="3902" selection-end="3902" vertical-scroll-proportion="-4.08" vertical-offset="1210" max-vertical-offset="1936">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="0.7383177" vertical-offset="532" max-vertical-offset="1040">
               <folding />
             </state>
           </provider>
@@ -99,6 +105,7 @@
         <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/flasticket.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -141,14 +148,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="flasticket" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.6 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -467,7 +466,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="130" selection-start="3902" selection-end="3902" vertical-scroll-proportion="0.26153848" vertical-offset="1210" max-vertical-offset="1936">
+        <state line="82" column="130" selection-start="3902" selection-end="3902" vertical-scroll-proportion="-4.08" vertical-offset="1210" max-vertical-offset="1936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="0.7383177" vertical-offset="532" max-vertical-offset="1040">
           <folding />
         </state>
       </provider>
