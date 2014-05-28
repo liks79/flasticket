@@ -20,26 +20,71 @@
         <div class="panel panel-primary">
           <div class="panel-body">
           예약이 완료되면 공연 당일날 매표소에서 예약자 이름으로 50%할인된 금액에 구매 하시면 됩니다.
-          예약전 반드시 <a href="http://www.왜왜질문맨.kr/ticket01.html" target="_blank"><span class="label label-primary"><b>상세공연정보</b></span></a>를 참고 하시고 예약 정보를 입력해 주세요.
+          예약전 반드시 <a href="http://www.왜왜질문맨.kr/ticket01.html" target="_blank"><b>상세공연정보</b></a>를 참고 하시고 예약 정보를 입력해 주세요.
           </div>
         </div>
-        <!--
-        날자, 회차, 이름, 이메일(회사), 전화번호, 티켓수(1~4), 비밀번호
-        -->
-        <div class="row">
-            <div class='col-sm-6'>
-                <div class="form-group">
-                    <div class='input-group date' id='datetimepicker5' data-date-format="YYYY/MM/DD">
-                        <input type='text' class="form-control" />
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
-                        </span>
+
+    <div class="contact-form">
+    <form id='contact' name="reserve_info" method="POST" class="form" role="form" action="/add">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><b>예약 정보입력</b></h3>
+          </div>
+          <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-12 contact-form">
+                        <div class="col-sm-4 contact-form">
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker5' data-date-format="YYYY/MM/DD">
+                                    <input id='rdate' name='rdate' type='text' class="form-control" required/>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 contact-form">
+                            <div class="input-group">
+                                <select id="order" name="order" class="form-control" >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                <span class="input-group-addon">회</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 contact-form">
+                            <div class="input-group">
+                                <select id="person" name="person" class="form-control" >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="2">3</option>
+                                    <option value="2">4</option>
+                                </select>
+                                <span class="input-group-addon">명</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div> <!-- End of Row -->
+
+                <div class="row">
+                    <div class="col-sm-12 contact-form">
+                        <div class="col-sm-4 contact-form">
+                            <input id='name' name='name' type='text' class="form-control" placeholder="예약자 이름" required autofocus/>
+                        </div>
+                        <div class="col-sm-4 contact-form">
+                            <input id='email' name='email' type='email' class="form-control" placeholder="이메일(회사)" required/>
+                        </div>
+                        <div class="col-sm-4 contact-form">
+                            <input id='tel' name='tel' type='text' class="form-control" placeholder="전화번호(모바일)" required/>
+                        </div>
+                    </div>
+                </div> <!-- End of Row -->
+            </div> <!-- End of Panel Body-->
+            <div class="panel-footer">
+              <button id="reserve-btn" class="btn btn-success default" type="submit">예약하기</button> <b>수정기능이 없으므로 정확한 정보를 입력해 주세요 =)</b>
             </div>
         </div>
-          <p>
-            <button id="reserve-btn" class="btn btn-success btn-lg" type="button">예약하기</button>
-          </p>
+    </form>
+    </div>
 
     </div>
 
@@ -50,6 +95,7 @@
     </div>
 
 
+
 {% endblock %}
 
 
@@ -58,24 +104,12 @@
 {% block js %}
     <script>
         $(document).ready(function(){
-                $('#datetimepicker5').datetimepicker({
+            $('#datetimepicker5').datetimepicker({
                     pickTime: false
             });
 
-
-        $('#reserve-btn').click(function (){
-            bootbox.confirm("Are you sure?", function(result) {
-                if(result){
-                    alert(result);
-                }
-                else {
-                    alert(result);
-                }
-            });
-        })
-
-
         });
+
 
     </script>
 {% endblock %}
