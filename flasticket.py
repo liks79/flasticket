@@ -46,7 +46,7 @@ def add():
     db.session.add(user)
     db.session.commit()
 
-    return url_for('list')
+    return redirect('/list')
 
 
 @app.errorhandler(404)
